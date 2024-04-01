@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import LogoIng from "../assets/logo.png";
+
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -8,28 +10,37 @@ const Header = () => {
   const handleToggle = () => setToggle(!toggle);
 
   return (
-    <header className="   bg-white font-[Poppins] bg-gradient-to-t from-[#fbc2eb] to-[#a6c1ee] ">
+    <header className="    font-[Poppins] bg-black fixed top-0 left-0 right-0 z-50 text-white">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
-            <div>
-              <img className="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..." />
+            <div className=" m-3 font-bold text-lg xl:text-3xl ">
+              <pre>
+                 <span className="text-[#6d28d9]">
+                      &lt;
+                 </span>
+                  DRISS
+                  <span className="text-[#6d28d9] ">/
+                  </span>
+                  ELMINIAR
+                  <span className="text-[#6d28d9] ">
+                    &gt;
+                 </span>
+              </pre>
             </div>
+
+
+            <div className=" flex">
+
             <div
-              className={` fixed z-50  nav-links duration-500 md:static  bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 ${toggle ? 'top-[6.5%]' : ''}`}>
+              className={` fixed mr-4 nav-links duration-500 md:static md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex  px-5   ${toggle ? ' flex justify-center items-center w-[92%] mx-auto  mt-auto text-center top-[5.6%] bg-white text-black' : ''}`}>
               <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li>
-                  <Link className="hover:text-gray-500" to="#">Products</Link>
+                  <Link className="hover:text-gray-500" to="#">About</Link>
                 </li>
                 <li>
-                  <Link className="hover:text-gray-500" to="#">Solution</Link>
+                  <Link className="hover:text-gray-500" to="#">Skills</Link>
                 </li>
                 <li>
-                  <Link className="hover:text-gray-500" to="#">Resource</Link>
-                </li>
-                <li>
-                  <Link className="hover:text-gray-500" to="#">Developers</Link>
-                </li>
-                <li>
-                  <Link className="hover:text-gray-500" to="#">Pricing</Link>
+                  <Link className="hover:text-gray-500" to="#">Projects</Link>
                 </li>
               </ul>
             </div>
@@ -37,6 +48,10 @@ const Header = () => {
               <button className="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button>
               <AiOutlineMenu className="text-3xl cursor-pointer md:hidden" onClick={handleToggle} />
             </div> 
+
+
+            </div>
+           
       </nav>
     </header>
   );
