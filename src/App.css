@@ -4,10 +4,13 @@
 
 html {
     scroll-behavior: smooth;
+    font-family:cursive;
 }
 
 body {
-    @apply text-lg
+    @apply text-lg;
+
+    
 }
 
 .projects img {
@@ -16,7 +19,7 @@ body {
 
 /* color */
 .bg-primary {
-    background: #0F172A;
+    background: #000000;
 }
 
 .bg-secondery {
