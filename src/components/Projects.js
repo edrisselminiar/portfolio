@@ -14,6 +14,13 @@ const Projects = () => {
       code: "https://github.com/Coderamrin/devlog",
     },
     {
+      img: devlog,
+      title: "devlog",
+      desc: " A multi author blog. Built with Node.js, MongoDB, React, Redux and Tailwind CSS ",
+      live: "https://devlogg.onrender.com/",
+      code: "https://github.com/Coderamrin/devlog",
+    },
+    {
       img: uilogs,
       title: "uilogs",
       desc: "Free website template directory for SaaS and Degital Agency. Built with Bootstrap, JQuery and JavaScript",
@@ -37,48 +44,51 @@ const Projects = () => {
   ];
 
   return (
-    <section className="bg-primary text-white px-5 py-32" id="projects">
-      <div className="container mx-auto grid md:grid-cols-2 items-center md:justify-between">
-        <div className="about-info mb-5">
-          <h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[180px] border-indigo-600 pb-2">
-            Projects
-          </h2>
-
-          <p className="pb-5">
-            These are some of my best projects. I have built these with React,
-            MERN and vanilla CSS. Check them out.
-          </p>
-        </div>
-
-        <div className="about-img"></div>
+    <section className="bg-gradient-to-tr to-[#6d28d9] via-[#000000] from-[#000000] text-white px-5 py-16" id="Projects">
+      <div>
+        <h2 className=" justify-center text-center  text-2xl lg:text-4xl font-bold mb-12 pb-2 hover:text-[#6d28d9]">
+          Projects
+        </h2>
       </div>
 
-      <div className="projects container mx-auto grid md:grid-cols-3 gap-10">
+      <div className="projects container mx-auto grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2   xl:grid-cols-3 2xl:grid-cols-3 gap-8 w-4/5 m-auto">
         {projects.map((project, i) => {
           return (
-            <div className="relative" key={i}>
-              <img src={project.img} alt={project.title} />
-              <div className="flex absolute left-0 right-0 top-[13px] bottom-0 mx-auto w-[90%] h-[90%]  bg-primary  opacity-0 duration-500 justify-center flex-col hover:opacity-100 ">
-                <p className="py-5 text-center font-bold px-2 text-white">
-                  {project.desc}
-                </p>
-
-                <div className="mx-auto">
-                  <a
-                    href={project.live}
-                    className="px-5 py-2 bg-blue-500 hover:bg-blue-600 mr-5 font-bold"
-                  >
-                    Live
-                  </a>
-                  <a
-                    href={project.code}
-                    className="px-5 py-2 bg-blue-700 hover:bg-blue-800 font-bold"
-                  >
-                    Code
-                  </a>
-                </div>
-              </div>
+            
+            
+          <div class="max-w-sm rounded-xl bg-stone-700 overflow-hidden border-2 border-gray-500  shadow-slate-400 mx-auto transform hover:skew-y-2 hover:scale-[1.03] delay-75 w-full" key={i}>
+            <div>
+              <img src={project.img} alt={project.title} className="transform duration-700 ease-in-out hover:-translate-y-1 hover:scale-110 delay-200 rounded-xl p-1" />
             </div>
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p class=" text-slate-300 text-base">
+                {project.desc}{project.desc}
+              </p>
+            </div>
+            <div class="px-4 pt-2 pb-1 ml-2">
+              
+                <a
+                  href="/#checkresume"
+                  class="inline-block text-white bg-gradient-to-r from-[#6d28d9] via-[#7e22ce] to-[#a21caf] hover:from-[#a21caf] hover:to-[#6d28d9] rounded-xl px-4 py-2 text-sm font-semibold mr-2 mb-2 transition duration-300 ease-in-out"
+                > 
+                  Link Code  
+                </a> 
+              
+                
+                <a
+                  href="/#checkresume"
+                  class="inline-block text-white bg-gradient-to-r from-[#6d28d9] via-[#7e22ce] to-[#a21caf] hover:from-[#a21caf] hover:to-[#6d28d9] hover:px-5   rounded-xl px-4 py-2 text-sm font-semibold mr-2 mb-2"
+                >
+                  Link Project
+                </a> 
+             
+             
+            </div>
+
+            
+          </div>
+
           );
         })}
       </div>

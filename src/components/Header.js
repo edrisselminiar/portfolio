@@ -34,13 +34,16 @@ const Header = () => {
               className={` fixed mr-4 nav-links duration-500 md:static md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex  px-5   ${toggle ? ' flex justify-center items-center w-[92%] mx-auto  mt-auto text-center top-[5.6%] bg-white text-black' : ''}`}>
               <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                 <li>
-                  <Link className="hover:text-[#7e22ce]" to="#">About</Link>
+                  <a className="hover:text-[#7e22ce]" href="#About">About</a>
                 </li>
                 <li>
-                  <Link className="hover:text-[#7e22ce]" to="#">Skills</Link>
+                  <a className="hover:text-[#7e22ce]" href="#Skills">Skills</a>
                 </li>
                 <li>
-                  <Link className="hover:text-[#7e22ce]" to="#">Projects</Link>
+                  <a className="hover:text-[#7e22ce]" href="#Projects">Projects</a>
+                </li>
+                <li>
+                  <a className="hover:text-[#7e22ce]" href="#Contact">Contact</a>
                 </li>
               </ul>
             </div>
