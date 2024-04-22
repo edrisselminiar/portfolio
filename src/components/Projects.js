@@ -1,8 +1,8 @@
 import React from "react";
 import cssProjects from "../assets/cssprojects.png";
 import devlog from "../assets/devlog.png";
-import getInspirred from "../assets/get-inspirred.png";
-import uilogs from "../assets/uilogs.png";
+// import getInspirred from "../assets/get-inspirred.png";
+// import uilogs from "../assets/uilogs.png";
 import ecommeProject from "../assets/ecommeProject.png";
 import books from "../assets/books.png";
 import portfolio from "../assets/portfolio.png";
@@ -21,28 +21,28 @@ const Projects = () => {
     {
       img: books,
       title: "The Books",
-      desc: "site dedicated to books that enables users to download and read books within the site, Created with Laravel and TailwindCSS ..",
+      desc: "site dedicated to books that enables users to download and read books within the site, Integrated frontend and backend website, Created with Laravel and TailwindCSS ..",
       live: "https://booooksdrisselminiar.great-site.net/?i=1",
       code: "https://github.com/edrisselminiar/BOOKS",
     },
     {
       img: portfolio,
-      title: "uilogs",
-      desc: "Free website template directory for SaaS and Degital Agency. Built with Bootstrap, JQuery and JavaScript",
+      title: "portfolio",
+      desc: "my portfolio website, Created with ReactJS and TailwindCSS ..",
       live: "",
       code: "https://github.com/edrisselminiar/portfolio",
     },
     {
       img: todolist,
-      title: "css projects",
-      desc: "Frontend Mentor challange directory, solved with vanilla CSS",
+      title: "todo list",
+      desc: "to-do list is a simple and effective tool for organizing tasks and managing your daily responsibilities, Created with ReactJS and Bootstrap ..",
       live: "https://todolist-driss-elminiar.netlify.app/",
       code: "https://github.com/edrisselminiar/react-todo-list-app",
     },
     {
       img: dentist,
-      title: "get Inspirred",
-      desc: "Quote search app. Used Quotable API for the quotes and React, Redux on the frontend",
+      title: "Appointment management",
+      desc: "Dentist website for managing medical appointments, Created with Laravel and Bootstrap ..",
       live: "",
       code: "https://github.com/edrisselminiar/Appointment.management",
     },
@@ -85,7 +85,8 @@ const Projects = () => {
                   href={project.live} target="_blank"
                   class="inline-block text-white bg-gradient-to-r from-[#6d28d9] via-[#7e22ce] to-[#a21caf] hover:from-[#a21caf] hover:to-[#6d28d9] hover:px-5   rounded-xl px-4 py-2 text-sm font-semibold mr-2 mb-2"
                 >
-                  Link Project
+                  Link ProjectIDRISS
+
                 </a> 
              
              

@@ -15,9 +15,9 @@ const Header = () => {
   }, []);
   
   return (
-    <header className="     bg-black fixed top-0 left-0 right-0 z-50 text-white" data-aos="zoom-in-down"  data-aos-duration="1000">
-      <nav className="flex justify-between items-center w-[92%] mx-auto">
-            <div className=" m-3 font-bold text-lg xl:text-3xl ">
+    <header className="     bg-black fixed top-0 left-0 right-0 z-50 text-white" >
+      <nav className="flex justify-between items-center w-[92%] mx-auto" >
+            <div className=" m-3 font-bold text-lg xl:text-3xl " data-aos="zoom-in-down"  data-aos-duration="1000">
               <pre>
                  <span className="text-[#6d28d9]">
                       &lt;
@@ -53,7 +53,7 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex items-center gap-6">        
-              <a target="_blank" href="https://github.com/edrisselminiar" class="bg-transparent hover:bg-[#7e22ce] text-[#7e22ce] font-semibold hover:text-white py-2 px-4 border border-[#7e22ce] hover:border-transparent rounded-xl">
+              <a target="_blank" href="https://github.com/edrisselminiar" class="bg-transparent hover:bg-[#7e22ce] text-[#7e22ce] font-semibold hover:text-white py-2 px-4 border border-[#7e22ce] hover:border-transparent rounded-xl" data-aos="zoom-in-down"  data-aos-duration="1000">
                   Github Profile
               </a>
               <AiOutlineMenu className="text-3xl cursor-pointer md:hidden" onClick={handleToggle} />
