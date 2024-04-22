@@ -1,6 +1,9 @@
-import React  from 'react';
+import React ,{ useEffect } from 'react';
 import HeroVideo from "../assets/HeroVideo.mp4";
 import Typewriter from "typewriter-effect";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 
 
@@ -18,12 +21,17 @@ const About = () => {
     };
     
 
+    useEffect(() => {
+      AOS.init();
+    }, []);
+    
+
 
   return (
     <section className=" bg-black px-5 text-white py-20 lg:py-18 xl:py-32 " id="About">
       <div className="container mx-auto grid md:grid-cols-2 justify-center items-center" >
         
-        <div className="hero-info pb-5 md:pb-0 p-9 pl-9 md:p-4 md:pl-6 lg:p-6 lg:pl-10 xl:p-12 xl:pl-16 2xl:p-14 2xl:pl-20     ">
+        <div className="hero-info pb-5 md:pb-0 p-9 pl-9 md:p-4 md:pl-6 lg:p-6 lg:pl-10 xl:p-12 xl:pl-16 2xl:p-14 2xl:pl-20 " data-aos="zoom-in-right" data-aos-duration="1000">
           <h1 className="text-2xl lg:text-4xl ">
             Hi, <br />I am <span className="text-accent"> Driss ELMINIAR</span><br />
             <div className=' flex'>
@@ -62,7 +70,7 @@ const About = () => {
           
         </div>
 
-        <div className="hero-img">
+        <div className="hero-img" data-aos="zoom-in-left" data-aos-duration="1000">
 
           <video src={HeroVideo}
             autoPlay

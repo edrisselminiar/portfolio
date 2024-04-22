@@ -29,7 +29,7 @@ const Skills = () => {
           </div>
 
 
-          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 text-center justify-center 2xl:grid-cols-2 xl:grid-cols-2 w-4/5 m-auto ">
+          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 text-center justify-center 2xl:grid-cols-2 xl:grid-cols-2 w-4/5 m-auto " data-aos="zoom-in" data-aos-duration="1000">
             
             <div class=" border  border-[#6d28d9] rounded-lg m-4 p-2 transform hover:skew-y-3 delay-150 ">
 
@@ -77,7 +77,7 @@ const Skills = () => {
 
 
 
-            <div class=" border  border-[#6d28d9] rounded-lg p-2 m-4  transform hover:skew-y-3 delay-150  ">
+            <div class=" border  border-[#6d28d9] rounded-lg p-2 m-4  transform hover:skew-y-3 delay-150  " >
 
               <h3 className="m-3">Backend</h3>
 
@@ -116,7 +116,7 @@ const Skills = () => {
              
             </div>
 
-            <div class=" border  border-[#6d28d9] rounded-lg  p-2 m-4 transform hover:skew-y-3 delay-150	  ">
+            <div class=" border  border-[#6d28d9] rounded-lg  p-2 m-4 transform hover:skew-y-3 delay-150	  " >
 
                 <h3 className="m-3">Others</h3>
 

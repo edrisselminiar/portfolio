@@ -52,7 +52,7 @@ const Contact = () => {
 
           <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-2 w-4/5 m-auto ">
 
-              <div class="p-6 mr-2 bg-gray-800 rounded-lg border-2 border-gray-500 text-slate-300 text-base text-center  ">
+              <div class="p-6 mr-2 bg-gray-800 rounded-lg border-2 border-gray-500 text-slate-300 text-base text-center  transform hover:skew-y-2 hover:scale-[1.03] delay-75" data-aos="zoom-in-right" data-aos-duration="1000">
                   <h1 class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight">
                       My Contact 
                   </h1>
@@ -89,19 +89,19 @@ const Contact = () => {
 
 
               <div>
-                <form class="md:p-6 lg:p-6 xl:p-6 2xl:p-6  p-0 pt-6 flex flex-col justify-center" onSubmit={handleSubmit}  > 
+                <form class="md:p-6 lg:p-6 xl:p-6 2xl:p-6  p-0 pt-6 flex flex-col justify-center" onSubmit={handleSubmit}  data-aos="zoom-in-left" data-aos-duration="1000" > 
                     <h2 className=" text-[#6d28d9] my-2 mx-2 text-2xl font-bold ">Email Me</h2>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col transform hover:skew-y-1 hover:scale-[1.05] delay-75">
                         <label for="name" class="hidden">Name</label>
                         <input  value={name} onChange={(e) => setName(e.target.value)}  type="text"  id="name" placeholder="Name" required class="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border-2 border-gray-500 text-slate-400 font-semibold focus:border-indigo-500 focus:outline-none" />
                     </div>
 
-                    <div class="flex flex-col mt-2  ">
+                    <div class="flex flex-col mt-2  transform hover:skew-y-1 hover:scale-[1.05] delay-75">
                         <label for="email" class="hidden">Email</label>
                         <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}  id="email" placeholder="Email" required class="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border-2  border-gray-500  text-slate-400 font-semibold focus:border-indigo-500 focus:outline-none" />
                     </div>
 
-                    <div class="flex flex-col mt-2">
+                    <div class="flex flex-col mt-2 transform hover:skew-y-1 hover:scale-[1.05] delay-75 ">
                         <label for="tel" class="hidden">message</label>
                         <textarea value={message} onChange={(e) => setMessage(e.target.value)} name="message" id="tel" placeholder="message" required class="w-100 mt-2 py-3 px-3 rounded-lg bg-gray-800 border-2 border-gray-500 text-slate-400 font-semibold focus:border-indigo-500 focus:outline-none" />
                     </div>

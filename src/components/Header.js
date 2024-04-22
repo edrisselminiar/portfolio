@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Link } from "react-router-dom";
-import LogoIng from "../assets/logo.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Header = () => {
@@ -9,8 +9,13 @@ const Header = () => {
 
   const handleToggle = () => setToggle(!toggle);
 
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+  
   return (
-    <header className="     bg-black fixed top-0 left-0 right-0 z-50 text-white">
+    <header className="     bg-black fixed top-0 left-0 right-0 z-50 text-white" data-aos="zoom-in-down"  data-aos-duration="1000">
       <nav className="flex justify-between items-center w-[92%] mx-auto">
             <div className=" m-3 font-bold text-lg xl:text-3xl ">
               <pre>
