@@ -48,9 +48,9 @@ const Header = () => {
               </ul>
             </div>
             <div className="flex items-center gap-6">        
-              <button class="bg-transparent hover:bg-[#7e22ce] text-[#7e22ce] font-semibold hover:text-white py-2 px-4 border border-[#7e22ce] hover:border-transparent rounded-xl">
+              <a target="_blank" href="https://github.com/edrisselminiar" class="bg-transparent hover:bg-[#7e22ce] text-[#7e22ce] font-semibold hover:text-white py-2 px-4 border border-[#7e22ce] hover:border-transparent rounded-xl">
                   Github Profile
-              </button>
+              </a>
               <AiOutlineMenu className="text-3xl cursor-pointer md:hidden" onClick={handleToggle} />
             </div> 
 

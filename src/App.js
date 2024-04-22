@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./page/Home";
 import React, { useRef } from 'react';
-import './app.css';
+import './App.css';
 
 
 
