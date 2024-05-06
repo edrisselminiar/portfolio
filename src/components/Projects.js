@@ -85,7 +85,7 @@ const Projects = () => {
                   href={project.live} target="_blank"
                   class="inline-block text-white bg-gradient-to-r from-[#6d28d9] via-[#7e22ce] to-[#a21caf] hover:from-[#a21caf] hover:to-[#6d28d9] hover:px-5   rounded-xl px-4 py-2 text-sm font-semibold mr-2 mb-2"
                 >
-                  Link ProjectIDRISS
+                  Link Project
 
                 </a> 
              
