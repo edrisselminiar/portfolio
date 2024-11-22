@@ -22,7 +22,7 @@ const Header = () => {
                  <span className="text-[#6d28d9]">
                       &lt;
                  </span>
-                  DRISSs
+                  DRISS
                   <span className="text-[#6d28d9] ">/
                   </span>
                   ELMINIAR
