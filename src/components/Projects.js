@@ -22,7 +22,7 @@ const Projects = () => {
       img: books,
       title: "The Books",
       desc: "site dedicated to books that enables users to download and read books within the site, Integrated frontend and backend website, Created with Laravel and TailwindCSS ..",
-      live: "https://booooksdrisselminiar.great-site.net/?i=1",
+      live: "https://openbook.42web.io/?i=1",
       code: "https://github.com/edrisselminiar/BOOKS",
     },
     {
